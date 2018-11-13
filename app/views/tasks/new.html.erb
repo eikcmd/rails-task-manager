@@ -1,0 +1,13 @@
+<div>
+  <h1>Create a task</h1>
+
+  <%= form_for(@task) do |task| %>
+  <%= task.label :title %>
+  <%= task.text_field :title %>
+  <%= task.label :details %>
+  <%= task.text_field :details %>
+  <%= task.submit %>
+  <% end %>
+<%= link_to "Back", tasks_path %>
+</div>
+
